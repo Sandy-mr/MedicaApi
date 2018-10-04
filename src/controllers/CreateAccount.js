@@ -32,6 +32,7 @@ const Controller = {
             .then(() => {
                 const newCreateAcc = new CreateAccount({
                     _id: mongoose.Types.ObjectId(),
+                    nombre: request.body.nombre,
                     email: request.body.email,
                     password: request.body.password,
                   });
